@@ -1,7 +1,7 @@
-import("../js/_feedback.js");
-import("../js/_asideLeft.js");
-import("../js/_articleTextShow.js");
-import("../js/_requestСall.js");
+import("./feedback.js");
+import("./asideLeft.js");
+import("./articleTextShow.js");
+import("./requestСall.js");
 
 let swiper;
 let init = false;
