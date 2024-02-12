@@ -1,0 +1,161 @@
+@media (min-width: 1440px) {
+  .container {
+    width: 1070px;
+  }
+  .header {
+    display: none;
+  }
+  .main {
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 320px 1120px;
+    &__aside_left {
+      display: block;
+    }
+  }
+  .aside-left__lang {
+    margin-top: 41px;
+  }
+  .nav {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      &-button {
+        display: flex;
+        align-items: center;
+        gap: 169px;
+      }
+    }
+    &__title::before {
+      left: -44px;
+    }
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__button {
+      font-family: "TT Lakes Medium", serif;
+      font-size: 16px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+  .button-left {
+    background: #ff3e79 url("../../public/icons/repair.svg") no-repeat center
+      center;
+  }
+  .button-left::before {
+    position: absolute;
+    white-space: nowrap;
+    text-align: left;
+    width: 140px;
+    right: 38px;
+    top: 9px;
+    content: "Оставить заявку";
+  }
+  .button-right {
+    background: #ff3e79 url("../../public/icons/check.svg") no-repeat center
+      center;
+  }
+  .button-right::before {
+    position: absolute;
+    white-space: nowrap;
+    text-align: left;
+    width: 140px;
+    right: 34px;
+    top: 9px;
+    content: "Статус ремонта";
+  }
+  .article {
+    width: 1070px;
+    margin: 0 auto;
+    justify-content: space-between;
+    &__wrapper,
+    &__text {
+      width: 490px;
+    }
+    &__text {
+      &_small {
+        display: none;
+      }
+      &_big {
+        display: block;
+        margin: 0;
+      }
+    }
+    &__button {
+      &__hide {
+        display: none;
+      }
+    }
+    &__img {
+      width: 530px;
+    }
+  }
+  .button__read {
+    display: none;
+  }
+  .brands {
+    &__item {
+      flex: 0 0 225px;
+    }
+    &__list div:nth-child(7),
+    div:nth-child(8) {
+      display: flex;
+    }
+    &__list div:nth-child(9),
+    div:nth-child(10),
+    div:nth-child(11) {
+      display: none;
+    }
+  }
+  .technology {
+    &__item {
+      width: 255px;
+    }
+    &__list div:nth-child(4) {
+      display: grid;
+    }
+    &__list div:nth-child(5) {
+      display: none;
+    }
+  }
+  .price {
+    &__list_td {
+      width: 1070px;
+    }
+    &__wrapper_td {
+      grid-template-columns: 4fr 1fr 1fr 1fr;
+      margin-left: 25px;
+    }
+    &__text_sub {
+      margin-top: 25px;
+    }
+  }
+  .footer {
+    width: 1120px;
+    left: 160px;
+  }
+  .feedback {
+    width: 1440px;
+    &__wrapper {
+      width: 440px;
+    }
+    &__container {
+      width: 390px;
+    }
+    &__header {
+      display: flex;
+    }
+    &__input {
+      width: 390px;
+    }
+    &__title {
+      margin-top: 0;
+      transform: translateX(-41px);
+    }
+    &__cross {
+      transform: translate(-100px, -4px);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url(../../public/fonts/TTLakes-Bold.ttf);
+}
+
+@font-face {
+  font-family: "TT Lakes Light";
+  src: url(../../public/fonts/TTLakes-Light.ttf);
+}
+
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url(../../public/fonts/TTLakes-Medium.ttf);
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  position: relative;
+  color: rgb(27, 28, 33);
+}
+
+button {
+  outline: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+}

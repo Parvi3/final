@@ -1,0 +1,26 @@
+.technology {
+  &__text {
+    font-family: "TT Lakes Light", serif;
+    transform: translate(5%, 20%);
+  }
+  &__list {
+    margin-bottom: 35px;
+  }
+  &__item {
+    width: 224px;
+    height: 120px;
+    display: grid;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+  }
+  &__link {
+    justify-self: end;
+    transform: translate(-30%, 10%);
+  }
+}
+
+.btn__show_2,
+.btn__hide_2 {
+  display: none;
+}

@@ -1,0 +1,65 @@
+.header {
+  width: 320px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+  }
+  &__button:hover {
+    opacity: 0.7;
+  }
+  &__logo {
+    display: block;
+    height: 55px;
+    width: 104px;
+    background: url("../../public/img/cps-icons.svg") no-repeat center center;
+  }
+}
+.burger {
+  background: #ff3e79 url(../../public/icons/burger.svg) no-repeat center center;
+}
+.call {
+  background: #ff3e79 url(../../public/icons/call.svg) no-repeat center center;
+}
+.chat {
+  background: #ff3e79 url(../../public/icons/chat.svg) no-repeat center center;
+}
+.profile {
+  background: #ff3e79 url(../../public/icons/profile.svg) no-repeat center
+    center;
+}
+.repair {
+  background: #ff3e79 url(../../public/icons/repair.svg) no-repeat center center;
+}
+.check {
+  background: #ff3e79 url(../../public/icons/check.svg) no-repeat center center;
+}
+.sticky::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 38px;
+  border-radius: 2px;
+  background: #eaeaea;
+  right: -12px;
+  top: 7px;
+}
+.media-768 {
+  display: none;
+}

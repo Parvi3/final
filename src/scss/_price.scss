@@ -1,0 +1,100 @@
+.price {
+  &__list {
+    margin-bottom: 35px;
+    &_td {
+      display: none;
+    }
+  }
+  &__wrapper {
+    margin-left: 16px;
+    &_td {
+      display: grid;
+      grid-template-columns: 3fr 1fr 1fr 1fr;
+      align-items: center;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 260px;
+    height: 200px;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    padding: 10px 0;
+    &_style {
+      border-radius: 6px;
+      background: rgb(255, 255, 255);
+      margin: 0;
+      padding: 10px 10px;
+    }
+    &_td {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__text {
+    color: rgb(126, 126, 130);
+    font-family: "TT Lakes Light", serif;
+    font-size: 14px;
+    &_sub {
+      font-family: "TT Lakes Light", serif;
+      font-size: 14px;
+      line-height: 20px;
+      margin-left: 15px;
+    }
+    &_margin {
+      margin-left: 10px;
+    }
+  }
+  &__subtext {
+    font-family: "TT Lakes Light", serif;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+  }
+  &__sub {
+    display: flex;
+    align-items: end;
+    gap: 40px;
+  }
+  &__button {
+    width: 106px;
+    height: 32px;
+    color: white;
+    border-radius: 16px;
+    background: rgb(255, 62, 121);
+    text-align: left;
+    font-family: "TT Lakes Bold", serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 13px;
+    &_right {
+      margin-left: 28px;
+    }
+    &_sub {
+      margin: 20px 0 0 15px;
+      font-family: "TT Lakes Medium", serif;
+      font-size: 16px;
+      text-align: left;
+    }
+    &_sub::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: #ff3e79;
+      mask: url(../../public/icons/dropdown.svg) no-repeat center center;
+      transform: translate(50%, 20%);
+    }
+  }
+  &__button::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url(../../public/icons/dropdown.svg) no-repeat center center;
+    transform: translateX(70%);
+  }
+}

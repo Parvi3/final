@@ -1,0 +1,52 @@
+.article {
+  &__wrapper {
+    width: 288px;
+    margin: 15px auto 0;
+  }
+  &__text {
+    font-family: "TT Lakes Light", serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    &_big {
+      display: none;
+    }
+    &_small {
+      display: none;
+    }
+  }
+  &__button {
+    display: block;
+    margin-top: 16px;
+    width: 115px;
+    text-align: right;
+    &__hide {
+      display: none;
+      margin-top: 16px;
+      width: 77px;
+      text-align: right;
+    }
+    &__hide::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: url(../../public/icons/arrow-down.svg) no-repeat center center;
+      left: 0;
+      transform: rotate(180deg);
+    }
+  }
+  &__button::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url(../../public/icons/arrow-down.svg) no-repeat center center;
+    left: 0;
+  }
+  &__img {
+    width: 320px;
+    height: 230px;
+    margin-top: 20px;
+  }
+}

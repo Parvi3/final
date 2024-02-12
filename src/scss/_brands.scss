@@ -1,0 +1,40 @@
+.brands {
+  min-height: 234px;
+  &__title {
+    background-image: linear-gradient(270deg, #fff 0%, #f8f8f8 98.61%);
+    width: 104%;
+    font-family: "TT Lakes Light", serif;
+    padding: 16px 0 12px 16px;
+    color: #7e7e82;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  &__list {
+    margin-bottom: 35px;
+  }
+  &__item {
+    display: flex;
+    flex: 0 0 200px;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    padding: 20px 16px;
+    border-radius: 6px;
+    background: #ffffff;
+  }
+  &__link {
+    background-image: url("../../public/icons/arrow.svg");
+    width: 40px;
+    height: 40px;
+  }
+}
+.wrapper {
+  margin-top: 25px;
+}
+.btn__hide,
+.btn__show {
+  display: none;
+  margin-left: 32px;
+}

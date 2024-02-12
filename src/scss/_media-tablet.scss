@@ -1,0 +1,231 @@
+@media (min-width: 768px) {
+  .swiper-pagination {
+    display: none;
+  }
+  .container {
+    width: 740px;
+    margin: 0 auto;
+  }
+  .header {
+    width: 768px;
+    margin: 0 auto;
+
+    &__wrapper {
+      gap: 25px;
+    }
+
+    &__nav {
+      gap: 100px;
+    }
+  }
+  .main {
+    min-width: 768px;
+    margin: 0 auto;
+    &__aside_left {
+      display: none;
+    }
+  }
+  .nav__title::before {
+    left: -33px;
+  }
+  .article {
+    display: flex;
+    gap: 85px;
+    margin: 30px auto 0;
+    height: 260px;
+    width: 735px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 0;
+    }
+
+    &__text {
+      width: 291px;
+
+      &_small {
+        display: block;
+      }
+
+      &_big {
+        display: none;
+      }
+    }
+
+    &__img {
+      width: 360px;
+      height: 230px;
+      margin-top: 0;
+    }
+
+    &__button {
+      margin-top: 0;
+
+      &__hide {
+        margin: 0;
+      }
+    }
+  }
+  .nav {
+    &__title {
+      left: 8px;
+    }
+    &__wrapper-button {
+      display: none;
+    }
+  }
+  .media-768 {
+    display: flex;
+    left: 95px;
+  }
+  .sticky::after {
+    right: 112px;
+  }
+  .sticky-right::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 38px;
+    border-radius: 2px;
+    background: #eaeaea;
+    right: -22px;
+    top: 7px;
+  }
+
+  // section brands
+  .btn__show {
+    display: block;
+  }
+  .brands {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    &__item {
+      flex: 0 0 191px;
+    }
+
+    &__list div:nth-child(7),
+    div:nth-child(8),
+    div:nth-child(9),
+    div:nth-child(10),
+    div:nth-child(11) {
+      display: none;
+    }
+  }
+  .btn__show::before {
+    content: "";
+    background: url("../../public/icons/arrow-down.svg") no-repeat center center;
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    margin-left: -30px;
+    top: -2px;
+  }
+  .btn__hide::before {
+    content: "";
+    background: url("../../public/icons/arrow-down.svg") no-repeat center center;
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    margin-left: -30px;
+    top: -2px;
+    transform: rotate(180deg);
+  }
+
+  .technology {
+    margin-top: 30px;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    &__item {
+      width: 223px;
+    }
+    &__list div:nth-child(4),
+    div:nth-child(5) {
+      display: none;
+    }
+  }
+  .btn__tech {
+    left: 35px;
+  }
+  .btn__show_2 {
+    display: block;
+  }
+  .btn__show_2::before {
+    content: "";
+    background: url("../../public/icons/arrow-down.svg") no-repeat center center;
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    margin-left: -30px;
+    top: -2px;
+  }
+  .btn__hide_2::before {
+    content: "";
+    background: url("../../public/icons/arrow-down.svg") no-repeat center center;
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    margin-left: -30px;
+    top: -2px;
+    transform: rotate(180deg);
+  }
+  .price {
+    margin-top: 30px;
+    &__list_td {
+      display: block;
+      width: 740px;
+      margin: 30px auto 0;
+    }
+    &__item_td {
+      margin-top: 20px;
+      gap: 40px;
+    }
+    &__item_style {
+      padding: 15px 10px;
+    }
+    &__hidden {
+      display: none;
+    }
+    &__text_sub {
+      width: 421px;
+      margin: 30px 0 0 0;
+    }
+    &__button_sub {
+      margin: 20px 0 0 0;
+    }
+    &__button {
+      width: 116px;
+    }
+  }
+  .footer {
+    width: 768px;
+    margin: 0 auto;
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+    }
+    &__text {
+      text-align: left;
+    }
+    &__text:nth-child(3) {
+      text-align: right;
+    }
+  }
+  .aside-left {
+    width: 768px;
+    left: 50%;
+  }
+
+  .feedback {
+    width: 768px;
+  }
+}

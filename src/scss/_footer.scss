@@ -1,0 +1,19 @@
+.footer {
+  margin: 0 auto;
+  width: 320px;
+  padding: 50px 0 32px;
+  background: rgb(248, 248, 248);
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__text {
+    color: rgb(126, 126, 130);
+    font-family: "TT Lakes Light", serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+  }
+}
