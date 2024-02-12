@@ -1,3 +1,7 @@
+import path from "path";
 export default {
-  base: "/final",
+  optimizeDeps: {
+    include: [path.resolve(__dirname, "src/js/index.js")],
+  },
+  base: "./",
 };
